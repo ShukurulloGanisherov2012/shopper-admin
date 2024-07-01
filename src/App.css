@@ -1,0 +1,337 @@
+body {
+  background-color: #eee;
+  overflow: hidden;
+}
+
+nav {
+  box-shadow: 0px 14px 10px -10px rgb(198, 198, 198);
+  padding-left: 75px;
+  padding-block: 10px;
+}
+
+.image {
+  width: 65px;
+  height: 65px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  width: 65px;
+  height: 65px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.designer:hover .designer-div{
+  display: block;
+}
+
+.designer-text {
+  width: 210px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.box {
+  width: 350px;
+  height: 555px;
+  background-color: white;
+  margin: 1px 0;
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 7px 4px 8px -2px rgb(198, 198, 198);
+}
+
+.box .box-card {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: rgb(92, 92, 92);
+  cursor: pointer;
+  transition: all .1s ease;
+}
+
+.box-card:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.box .box-card2 {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .1s ease;
+  color: rgb(187, 96, 96);
+}
+
+.box-card2:hover {
+  background-color: #eee;
+  color: red;
+}
+
+.icon {
+  left: 0;
+  font-size: 30px;
+}
+
+.OutletBox {
+  width: 760px;
+  height: 525px;
+  background-color: white;
+  margin: 30px;
+  border-radius: 15px;
+  padding: 32px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 3px 13px 5px gray;
+}
+
+.OutletCartsWrapper {
+  width: 100%;
+  height: 560px;
+}
+
+.CartsWrapper {
+  width: 100%;
+  height: 386px;
+}
+
+.Carts {
+  width: 100%;
+  height: 386px;
+}
+
+.cart {
+  width: 100%;
+  height: 130px;
+  border: none;
+  border-top: 1px solid black;
+  padding-inline: 0px;
+  padding-block: 13px;
+  display: flex;
+
+}
+
+.component {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.img2 {
+  width: 13%;
+  height: 100%;
+}
+
+.img2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.text2 {
+  width: 541px;
+  height: 100%;
+  color: rgb(91, 90, 90);
+}
+
+.text2 .h5 {
+  width: 30%;
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.AddCarts {
+  width: 760px;
+  height: 525px;
+  background-color: white;
+  margin: 30px;
+  border-radius: 15px;
+  padding: 32px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 3px 13px 5px gray;
+}
+
+.Inbox {
+  width: 760px;
+  height: 525px;
+  background-color: white;
+  margin: 30px;
+  border-radius: 15px;
+  padding: 32px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 3px 13px 5px gray;
+}
+
+.inbox-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.inbox-sidebar {
+  flex: 0 0 300px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto;
+}
+
+.inbox-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.inbox-messages {
+  margin-top: 10px;
+}
+
+.inbox-message {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inbox-message:hover {
+  background-color: #e0e0e0;
+}
+
+.inbox-message.selected {
+  background-color: #d3d3d3;
+}
+
+.inbox-message-sender {
+  font-weight: bold;
+  color: #333;
+}
+
+.inbox-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.selected-message {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.selected-message-sender {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.selected-message-text {
+  color: #444;
+  line-height: 1.6;
+}
+
+.no-message {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+.designer-div{
+  width: 180px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 60px;
+  box-shadow: 1px 1px 10px 0px gray;
+  display: none;
+  z-index: 3;
+}
+
+.designer-div h5{
+  padding:8px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.designer-div h5:hover{
+  background-color: #eee;
+}
+
+.Profile {
+  width: 760px;
+  height: 525px;
+  background-color: white;
+  margin: 30px;
+  border-radius: 15px;
+  padding: 32px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 3px 13px 5px gray;
+  z-index: 0;
+}
+
+.Settings {
+  width: 760px;
+  height: 525px;
+  background-color: white;
+  margin: 30px;
+  border-radius: 15px;
+  padding: 32px 60px;
+  box-shadow: 0px 3px 13px 5px gray;
+}
+
+.add:hover{
+  box-shadow: 0px 0px 8px 1px green;
+}
+
+.profile-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/149/149071.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-img button{
+  width: 90%;
+  height: 90%;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all .6s ease;
+}
+.profile-img:hover button{
+  transform: scale(1);
+  border-radius: 50%;
+}
